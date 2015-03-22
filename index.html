@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Which Dash Should I Use?</title>
+    <meta name="description" content="A quick reference guide to the use of dashes, punctuation marks that can differ not only in length but in function." />
+    <meta name="keywords" content="dash, en dash, em dash, n dash, m dash, n-rule, m-rule, nut, mutton, punctuation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <style>
+      * {border: 0; margin: 0; outline: 0; padding: 0}
+      html, body {height: 100%}
+      body {background: #FFF; font-family: "Palatino Linotype", Georgia, serif}
+      .section {width: 50%}
+      .en-dash {float: left}
+      .em-dash {float: right}
+      .en-dash p {padding: 0 24px 0 48px}
+      .em-dash p {padding: 0 48px 0 24px}
+      h1 {color: #000; font-size: 1024px; font-weight: normal; text-align: center}
+      p {color: #666; line-height: 1.618; margin: 0 auto}
+      hr {border-bottom: 1px solid #CCC; display: none; margin: 48px 48px 0}
+
+      @media only screen and (max-width: 992px) {
+        p {font-size: 0.8em}
+      }
+
+      @media only screen and (max-width: 480px) {
+        .section {float: none; margin-bottom: 48px; width: 100%}
+        h1 {line-height: 0.8; margin-top: -0.2em}
+        p {padding: 0 48px 0 !important}
+        hr {display: block}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section en-dash">
+      <h1>&ndash;</h1>
+      <p>This is the <strong>en dash</strong>. It is commonly used to indicate a closed range of values (e.g. <em>1977&ndash;1981</em>), to contrast values or illustrate a relationship between two things (e.g. <em>Boston&ndash;Hartford route</em>) and in compound (phrasal) attributives in which one or both elements is itself a compound (e.g. <em>Pulitzer Prize&ndash;winning novel</em>). En dashes normally do not have spaces around them, except when used around parenthetical expressions &ndash; such as this one &ndash; or when avoiding spaces may cause confusion or look odd. The en dash is sometimes used as a substitute for the minus sign, when the minus sign character is not available and the hyphen-minus is too narrow to be typographically acceptable.</p>
+    </div>
+    <hr />
+    <div class="section em-dash">
+      <h1>&mdash;</h1>
+      <p>This is the <strong>em dash</strong>. It often demarcates a break of thought or some similar interpolation stronger than the interpolation demarcated by parentheses, or to indicate that a sentence is unfinished because the speaker has been interrupted. Furthermore, the em dash can be used where a full stop (or &ldquo;period&rdquo;) is too strong and a comma too weak. According to various style guides, an em dash should always be set closed, meaning it should not be surrounded by spaces&mdash;unlike the en dash and its open-set style in running text. Em dashes are also occasionally used to introduce quoted text, if the quotation dash is unavailable or is contrary to the house style being used.</p>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+    <script> $("h1").fitText(0.2); </script>
+  </body>
+</html>
