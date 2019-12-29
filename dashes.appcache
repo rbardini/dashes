@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# rev 0
+
+CACHE:
+https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
+https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js
+favicon.ico
+
+NETWORK:
+*
+http://*
+https://*

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="dashes.appcache">
   <head>
     <meta charset="utf-8" />
     <title>Which Dash Should I Use?</title>
+    <meta name="author" content="Rafael Bardini" />
     <meta name="description" content="A quick reference guide to the use of dashes, punctuation marks that can differ not only in length but in function." />
-    <meta name="keywords" content="dash, en dash, em dash, n dash, m dash, n-rule, m-rule, nut, mutton, punctuation" />
+    <meta name="keywords" content="dash, en dash, em dash, n dash, m dash, n rule, m rule, nut, mutton, punctuation" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <style>
-      * {border: 0; margin: 0; outline: 0; padding: 0}
-      html, body {height: 100%}
-      body {background: #FFF; font-family: "Palatino Linotype", Georgia, serif}
-      .section {width: 50%}
-      .en-dash {float: left}
-      .em-dash {float: right}
-      .en-dash p {padding: 0 24px 0 48px}
-      .em-dash p {padding: 0 48px 0 24px}
-      h1 {color: #000; font-size: 1024px; font-weight: normal; text-align: center}
-      p {color: #666; line-height: 1.618; margin: 0 auto}
-      hr {border-bottom: 1px solid #CCC; display: none; margin: 48px 48px 0}
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-      @media only screen and (max-width: 992px) {
-        p {font-size: 0.8em}
+    <style>
+      body {font-family:"Palatino Linotype", Georgia, serif}
+      .section {width:50%}
+      .en-dash {float:left}
+      .em-dash {float:right}
+      .en-dash p {padding:0 20px 0 40px}
+      .em-dash p {padding:0 40px 0 20px}
+      h1 {font-size:1000px; font-weight:normal; text-align:center}
+      p {color:#666; line-height:1.5}
+      hr {border-bottom:1px solid #CCC; display:none; margin:40px 40px 0}
+
+      @media only screen and (max-width: 496px) {
+        .section {float:none; margin-bottom:40px; width:100%}
+        h1 {line-height:0.8; margin-top:-0.2em}
+        p {padding:0 40px 0!important}
+        hr {display:block}
       }
 
-      @media only screen and (max-width: 480px) {
-        .section {float: none; margin-bottom: 48px; width: 100%}
-        h1 {line-height: 0.8; margin-top: -0.2em}
-        p {padding: 0 48px 0 !important}
-        hr {display: block}
+      @media only screen and (max-width: 976px) {
+        p {font-size:0.8em}
       }
     </style>
   </head>
@@ -46,6 +48,6 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
-    <script> $("h1").fitText(0.2); </script>
+    <script>$('h1').fitText(0.2);</script>
   </body>
 </html>
